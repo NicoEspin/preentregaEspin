@@ -11,6 +11,19 @@ html {
 a {
 	text-decoration: none;
 }
+/* Scrollbar */
+
+::-webkit-scrollbar{
+	width: 15px;
+
+}
+::-webkit-scrollbar-track{
+	background: #dddddddd;
+}
+::-webkit-scrollbar-thumb{
+	background: crimson;
+}
+/* Fin scrollbar */
 .contenedor {
 	min-height: 100vh;
 	width: 100%;
@@ -203,7 +216,7 @@ p {
 /* Seccion principal */
 #principal {
 	background-image: url(../images/nico.jpg);
-	background-size: cover;
+	background-size:cover;
 	background-position: top center;
 	position: relative;
 	z-index: 1;
@@ -317,6 +330,139 @@ font-weight: 500;
 }
 
 /*Fin seccion de contacto */
+/* Servicios */
+#servicios .servicios {
+	flex-direction: column;
+	text-align: center;
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#servicios .servicio-arriba {
+	max-width: 500px;
+	margin: 0 auto;
+}
+#servicios .servicio-abajo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+#servicios .servicio-item {
+	flex-basis: 80%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 10px;
+	background-image: url(../images/img-proyectos.png);
+	background-size: cover;
+	margin: 10px 5%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+#servicios .servicio-item::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: 0.9;
+	z-index: -1;
+}
+#servicios .servicios-abajo .icon {
+	height: 80px;
+	width: 80px;
+	margin-bottom: 20px;
+}
+#servicios .servicio-item h2 {
+	font-size: 2rem;
+	color: white;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+#servicios .servicio-item p {
+	color: white;
+	text-align: left;
+}
+/* Fin Servicios */
+/* Proyectos */
+#proyectos .proyectos {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#proyectos .proyectos-header h1 {
+	margin-bottom: 50px;
+}
+#proyectos .proyectos-todos {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+#proyectos .proyecto-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 10px;
+}
+#proyectos .proyecto-info {
+	padding: 30px;
+	flex-basis: 50%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	color: white;
+}
+#proyectos .proyecto-info h1 {
+	font-size: 4rem;
+	font-weight: 500;
+}
+#proyectos.proyecto-info h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin-top: 10px;
+}
+#proyectos .proyecto-info p {
+	color: white;
+}
+#proyectos .proyecto-img {
+	flex-basis: 50%;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+#proyectos .proyecto-img:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: 0.7;
+}
+#proyectos .proyecto-img img {
+	transition: 0.3s ease transform;
+}
+#proyectos .proyecto-item:hover .proyecto-img img {
+	transform: scale(1.1);
+}
+/* Fin proyectos */
 /* Footer */
 #footer {
 	background-color: #29323c;
@@ -398,6 +544,39 @@ font-weight: 500;
 		display: none;
 	}
 	/* fin header */
+
+	/* Principal */
+	#principal h1 {
+		font-size: 7rem;
+	}
+	/* Fin principal*/
+	
+	/* Servicos*/
+	#servicios .servicio-abajo .servicio-item {
+		flex-basis: 45%;
+		margin: 2.5%;
+	}
+	/* Fin Servicios */
+	/* Proyectos */
+	#proyectos .proyecto-item {
+		flex-direction: row;
+	}
+	#proyectos .proyecto-item:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+	#proyectos .proyecto-item {
+		height: 400px;
+		margin: 0;
+		width: 100%;
+		border-radius: 0;
+	}
+	#proyectos .proyectos-todos .proyecto-info {
+		height: 100%;
+	}
+	#proyectos .proyectos-todos .proyecto-img {
+		height: 100%;
+	}
+	/* Fin Proyectos */
 
 	
 }
