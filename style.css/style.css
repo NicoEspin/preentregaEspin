@@ -328,7 +328,8 @@ p {
   margin: 10px 5%;
   position: relative;
   z-index: 1;
-  overflow: hidden; }
+  overflow: hidden; 
+  }
   #servicios .servicio-item h2 {
     font-size: 2rem;
     color: white;
@@ -393,8 +394,14 @@ p {
     font-size: 1.8rem;
     font-weight: 500;
     margin-top: 10px; }
-  #proyectos .proyecto-info p {
+  #proyectos .proyecto-info p  {
     color: white; }
+    #proyectos .proyecto-info p a {
+    color: white;
+    font-size: 5rem rem;
+    margin: 20px;
+    text-decoration:underline;
+    }
 
 #proyectos .proyecto-img {
   flex-basis: 50%;
