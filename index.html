@@ -1,14 +1,16 @@
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio | Nicolas Espin</title>
-    <link rel="stylesheet" href="./style.css/style.css">
-    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio | Nicolas Espin</title>
+  <link rel="stylesheet" href="./style.css/style.css">
+  <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-     <!-- Header -->
+  <!-- Header -->
   <header id="header">
     <div class="header contenedor">
       <nav class="nav-bar">
@@ -23,10 +25,10 @@
           </div>
           <ul>
             <li><a href="#principal" data-after="principal">Principal</a></li>
-            <li><a href="./pages/servicios.html" data-after="servicios">Servicios</a></li>
-            <li><a href="./pages/proyectos.html" data-after="proyectos">Proyectos</a></li>
-            <li><a href="./pages/sobre-mi.html" data-after="sobre mi">Sobre mi</a></li>
-            <li><a href="./pages/contacto.html" data-after="contacto">Contacto</a></li>
+            <li><a href="#servicios" data-after="servicios">Servicios</a></li>
+            <li><a href="#proyectos" data-after="proyectos">Proyectos</a></li>
+            <li><a href="#sobre" data-after="sobre mi">Sobre mi</a></li>
+            <li><a href="#contacto" data-after="contacto">Contacto</a></li>
           </ul>
         </div>
       </nav>
@@ -47,33 +49,206 @@
     </div>
   </main>
   <!-- Fin Seccion Principal  -->
-   <!-- Footer -->
-   <footer id="footer" class="gris">
-    <div class="footer contenedor">
-        <div class="logo">
-            <h1><span>N</span>icolas <span>E</span>spin</h1>
+  <!-- Tecnologias -->
+  <section id="servicios">
+    <div class="servicios contenedor">
+      <div class="servicio-arriba">
+        <h1 class="titulo-seccion"><span>Tec</span>nologías</h1>
+        <p>En esta sección se pueden ver los diversos servicios y conocimientos que tengo para aportar.</p>
+      </div>
+      <div class="servicio-abajo">
+        <div class="servicio-item">
+          <div class="icon"><img src="./icons/servicios-96.png" /></div>
+          <h2>Frontend</h2>
+          <p>HTML, CSS, JavaScript, Reactjs, TailwindCSS, Bootstrap. </p>
         </div>
-        <h2>Desarrollador web</h2>
-        <div class="social-icon">
-            <div class="social-item">
-                <a href="https://www.instagram.com/nicooespin/?igshid=NTE5MzUyOTU%3D"  target="_blank"><img src="./icons/instagram-96.png" alt="logo instagram"/></a>
-            </div>
-            <div class="social-item">
-                <a href="https://www.facebook.com/niko.espin?mibextid=ZbWKwL" target="_blank" ><img src="./icons/facebook-f-96.png" alt="logo facebook" /></a>
-            </div>
-            <div class="social-item">
-                <a href="https://twitter.com/Nicoo_Espin?t=4DhWV5vahOtwEQvdhWgDbg&s=08" target="_blank"><img src="./icons/twitter-96.png" alt="logo twitter" /></a>
-            </div>
-            <div class="social-item">
-                <a href="https://github.com/NicoEspin" rel="blank" target="_blank"><img src="./icons/github-96.png" alt="logo github"/></a>
-            </div>
+        <div class="servicio-item">
+          <div class="icon"><img src="./icons/servicios-96.png" /></div>
+          <h2>Programación Backend</h2>
+          <p>Node Js, Express, Socket.io, MongoDB, Firebase.</p>
         </div>
-        <p>Copyright © 2023 Espin. Todos los derechos reservados.</p>
+        <div class="servicio-item">
+          <div class="icon"><img src="./icons/servicios-96.png" /></div>
+          <h2>Tecnologías</h2>
+          <p>Wordpress, Git, Github, VSCode, Postman</p>
+        </div>
+        <div class="servicio-item">
+          <div class="icon"><img src="./icons/servicios-96.png" /></div>
+          <h2>Aprendiendo</h2>
+          <p>Typescript, Postgress, Docker</p>
+        </div>
+      </div>
     </div>
-</footer>
-<!-- Fin Footer -->
+  </section>
+  <!-- Fin Tecnologias -->
+  <!-- Proyectos -->
+  <section id="proyectos">
+    <div class="proyectos contenedor">
+      <div class="proyectos-header">
+        <h1 class="titulo-seccion">Proyectos <span>Recientes</span></h1>
+      </div>
+      <div class="proyectos-todos">
+        <article class="proyecto-item">
+          <div class="proyecto-info">
+            <h2>Warup</h2>
+            <h3>
+              Proyecto FullStack de una App de chat en tiempo Real, Frontend hecho con React, TailwindCSS, DaysiUi y
+              Zustand para estados globales, Backend
+              hecho con Nodejs, Express, MongoDB y Socket.io
+            </h3>
+            <p><a href="https://chat-app-1-xsfr.onrender.com/" target="_blank" class="cta" >Link Aquí</a></p>
+
+          </div>
+          <div class="proyecto-img">
+            <img src="./images/warup.png" alt="img">
+          </div>
+        </article>
+
+        <article class="proyecto-item">
+          <div class="proyecto-info">
+            <h2>VirtualR</h2>
+            <h3>Proyecto Sobre una Landing Page, hecha con React y TailwindCSS</h3>
+            <p><a href="https://virtualr-62845.web.app/" target="_blank" class="cta ">Link Aquí</a></p>
+          </div>
+          <div class="proyecto-img">
+            <img src="./images/VirtualR.png" alt="img">
+          </div>
+        </article>
+        <article class="proyecto-item">
+          <div class="proyecto-info">
+            <h2>Ecommerce React</h2>
+            <h3>Página sobre un Ecommerce completo hecha con React + Vite, utilizando Firestore(db), React Router Dom,
+              conditional rendering, componetización, manejo de estados, useEffect y useParams.</h3>
+            <p><a href="https://ecommerce-6899c.web.app/" target="_blank" class="cta ">Link Aquí</a></p>
+          </div>
+          <div class="proyecto-img">
+            <img src="./images/ecommerce-react.png" alt="img">
+          </div>
+        </article>
+
+        <article class="proyecto-item">
+          <div class="proyecto-info">
+            <h2>Portfolio AC</h2>
+            <h3>Proyecto Freelance sobre un portfolio para una diseñadora grafica, hecho con React + Vite, TailwindCSS,
+              NextUi y Framer Motion</h3>
+            <p><a href="https://portfolio-ac-1c027.web.app/" target="_blank" class="cta ">Link Aquí</a></p>
+          </div>
+          <div class="proyecto-img">
+            <img src="./images/antto-port.png" alt="img">
+          </div>
+        </article>
+        <article class="proyecto-item">
+          <div class="proyecto-info">
+            <h2>Game List App</h2>
+            <h3>Página hecha con React + Vite, utilizando la RAWG API, Axios y TailwindCSS.</h3>
+            <p><a href="https://game-list-app-8d0d2.web.app/" target="_blank" class="cta ">Link Aquí</a></p>
+          </div>
+          <div class="proyecto-img">
+            <img src="./images/gamelist.png" alt="img">
+          </div>
+        </article>
+  </section>
+  <!-- Fin Proyectos-->
+  <!-- Sobre mi -->
+  <section id="sobre">
+    <div class="sobre contenedor">
+      <div class="col-izq">
+        <div class="sobre-img">
+          <img src="./images/Yo.jpeg" alt="foto nico">
+        </div>
+      </div>
+      <div class="col-derecha">
+        <h1 class="titulo-seccion">Sobre <span>Mi</span></h1>
+        <h2>Desarrollador FullStack</h2>
+        <p>
+          Soy Juan Nicolás Espin, Desarrollador Full Stack Junior, especializado en el stack MERN (MongoDB, Express,
+          React.js, Node.js). Además, construyo sitios web utilizando WordPress, asegurándome siempre de aplicar las
+          mejores prácticas dentro de mis conocimientos para completar mis proyectos con éxito.
+        </p>
+        <a href="https://docs.google.com/document/d/1_suRcqezLCTSQBX3feTxQ3H_LkM3O04P/edit?usp=sharing&ouid=103402096101334474879&rtpof=true&sd=true"
+          target="_blank" class="cta">Ver curriculum</a>
+      </div>
+    </div>
+  </section>
+  <!-- Fin sobre mi-->
+  <!-- Seccion Contacto -->
+
+  <section id="contacto">
+
+    <div class="contacto contenedor container">
+
+      <article class="container">
+
+        <div class="row contacto-items ">
+          <div class="col-12 ">
+            <h1 class="titulo-seccion">Informacion de<span> Contacto</span></h1>
+          </div>
+          <div class="col-12 contacto-item">
+            <div class="icon"><img src="./icons/linkedin-96.png" /></div>
+            <div class="contacto-info">
+              <h1>Linkedin</h1>
+              <a href="https://www.linkedin.com/in/nicol%C3%A1s-espin-2b59a0183/" target="_blank">Ver mi perfil</a>
+              <h2></h2>
+            </div>
+          </div>
+
+
+          <div class="col-12 contacto-item">
+            <div class="icon"><img src="./icons/mail-96.png" /></div>
+            <div class="contacto-info">
+              <h1>Email</h1>
+              <h2>nikoespin123@gmail.com</h2>
+              <h2>nikoespin@hotmail.com</h2>
+            </div>
+          </div>
+
+
+          <div class="col-12 contacto-item">
+            <div class="icon"><img src="./icons/address-96.png" /></div>
+            <div class="contacto-info">
+              <h1>Direccion</h1>
+              <h2>Cordoba, Argentina</h2>
+              <h2>Villa Carlos Paz</h2>
+            </div>
+
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- Fin Seccion contacto -->
+  <!-- Footer -->
+  <footer id="footer" class="gris">
+    <div class="footer contenedor">
+      <div class="logo">
+        <h1><span>N</span>icolas <span>E</span>spin</h1>
+      </div>
+      <h2>Desarrollador web</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.instagram.com/nicooespin/?igshid=NTE5MzUyOTU%3D" target="_blank"><img
+              src="./icons/instagram-96.png" alt="logo instagram" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.facebook.com/niko.espin?mibextid=ZbWKwL" target="_blank"><img
+              src="./icons/facebook-f-96.png" alt="logo facebook" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://twitter.com/Nicoo_Espin?t=4DhWV5vahOtwEQvdhWgDbg&s=08" target="_blank"><img
+              src="./icons/twitter-96.png" alt="logo twitter" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://github.com/NicoEspin" rel="blank" target="_blank"><img src="./icons/github-96.png"
+              alt="logo github" /></a>
+        </div>
+      </div>
+      <p>Copyright © 2023 Espin. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <!-- Fin Footer -->
   <!-- Link script -->
   <script src="./script/script.js"></script>
   <!-- Link  script -->
 </body>
+
 </html>

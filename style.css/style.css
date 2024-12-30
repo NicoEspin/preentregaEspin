@@ -465,12 +465,6 @@ p {
 #proyectos .proyecto-info p {
   color: white;
 }
-#proyectos .proyecto-info p a {
-  color: white;
-  font-size: 5rem rem;
-  margin: 20px;
-  text-decoration: underline;
-}
 
 #proyectos .proyecto-img {
   flex-basis: 50%;
